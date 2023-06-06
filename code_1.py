@@ -38,10 +38,10 @@ class Grid:
             print(' '.join(['X' if cell else '.' for cell in row]))
 
 #voorbeeld
-grid = Grid(10)  #maak een rooster van 10x10 cellen
-grid.initialize_saw((0, 0))  #initialiseer de SAW vanaf cel (0, 0)
+grid = Grid(20)  #maak een rooster van 10x10 cellen
+grid.initialize_saw((8, 8))  #initialiseer de SAW vanaf cel (0, 0)
 
-for _ in range(9):  #laat de SAW 9 keer groeien
+for _ in range(10):  #laat de SAW 9 keer groeien
     grid.grow_saw()
 
 grid.print_grid()  #print het rooster met de gegroeide SAW
