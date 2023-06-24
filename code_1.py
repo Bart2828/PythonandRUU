@@ -13,7 +13,7 @@ class Grid:
     def get_neighbours(self, cell):
         x, y = cell
         neighbours = []
-        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]  # Right, Left, Down, Up
+        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)] 
 
         for dx, dy in directions:
             nx, ny = x + dx, y + dy
@@ -26,7 +26,7 @@ class Grid:
         current_cell = self.saw[-1]
         neighbours = self.get_neighbours(current_cell)
 
-        if not neighbours:  # No valid neighbours, SAW cannot grow further
+        if not neighbours: 
             return
 
         next_cell = random.choice(neighbours)
